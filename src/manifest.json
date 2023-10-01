@@ -1,7 +1,7 @@
 {
     "theme_color": "#314155",
     "background_color": "#314155",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Hydration Monitor Application",

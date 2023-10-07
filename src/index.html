@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./index.css" rel="stylesheet" />
     <link href="./manifest.json" rel="manifest"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>HydrApp</title>
   </head>
 
   <body class="bg-slate-200 text-gray-600 min-h-screen dark:bg-gray-800 dark:text-slate-50">
-    <main class="w-full p-4 max-w-xl mx-auto mt-2 flex-col flex">
-      <h1 class="text-4xl font-bold mb-4 text-center">HydrApp®</h1>
-      <h2 class="text-1xl font-thin mb-2 text-center">Your daily hydration at your fingertips!</h2>
-      <textarea
-        class="textarea--js block p-2.5 w-full h-64 mb-4 text-sm text-gray-400 rounded-lg border bg-white dark:bg-gray-700 border-gray-600 dark:placeholder-gray-400"
-      ></textarea>
+    <main class="w-full p-4 max-w-xl mx-auto mt-2 flex-col flex justify-center">
+      <h1 class="text-4xl font-bold mb-4 text-center font-roboto">HydrApp®</h1>
+      <h2 class="text-1xl font-thin mb-2 text-center font-roboto">Your daily hydration at your fingertips!</h2>
+      <div class="m-4 block">
+        <img src="/src/images/glass.svg" alt="Glass of water">
+      </div>
       <button
         type="button"
-        class="add--js text-white bg-gray-800 border border-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 dark:focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:text-gray-800 dark:bg-white dark:border-white dark:hover:bg-gray-100 dark:hover:border-gray-600 focus:ring-gray-700"
+        class="add--js font-roboto font-bold text-white bg-gray-800 border border-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-4 dark:focus:ring-gray-200 rounded-lg text-sm px-5 py-2.5 mb-2 dark:text-gray-800 dark:bg-white dark:border-white dark:hover:bg-gray-100 dark:hover:border-gray-600 focus:ring-gray-700"
       >
         Add cup of 250ml
       </button>
 
       <button
         type="button"
-        class="subtract--js text-red-600 bg-gray-800 border dark:border-white focus:outline-none hover:bg-gray-700 focus:ring-4 dark:focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-white border-gray-300 dark:hover:bg-gray-100 dark:hover:border-gray-600 focus:ring-gray-700"
+        class="subtract--js font-roboto font-bold text-red-600 bg-gray-800 border dark:border-white focus:outline-none hover:bg-gray-700 focus:ring-4 dark:focus:ring-gray-200 rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-white border-gray-300 dark:hover:bg-gray-100 dark:hover:border-gray-600 focus:ring-gray-700"
       >
         Subtract one cup
       </button>

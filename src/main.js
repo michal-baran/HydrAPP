@@ -1,17 +1,28 @@
+const addButton = document.querySelector('.add--js');
+const subtractButton = document.querySelector('.subtract--js');
+
 let value
-const key = new Date().toISOString().slice(0, 10)
+const key = new Date().toLocaleString().slice(0, 10)
 
 if (localStorage.getItem(key)==null) {
     localStorage.setItem(key,0)
+    value=0
 }
+
+setInterval(() => {
+    if(key!== new Date().toLocaleString().slice(0, 10)) {
+        key = new Date().toLocaleString().slice(0, 10)
+        localStorage.setItem(key,0)
+        value = 0
+    }
+}, 1000)
 
 value = parseInt(localStorage.getItem(key))
 
 let count = document.querySelector('.count--js');
 count.innerHTML = localStorage.getItem(key);
 
-const addButton = document.querySelector('.add--js');
-const subtractButton = document.querySelector('.subtract--js');
+
 
 addButton.addEventListener('click', () => {
     value = value + 1

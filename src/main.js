@@ -1,8 +1,8 @@
-const addButton = document.querySelector('.add--js');
-const subtractButton = document.querySelector('.subtract--js');
+let addButton = document.querySelector('.add--js');
+let subtractButton = document.querySelector('.subtract--js');
 
 let value
-const key = new Date().toLocaleString().slice(0, 10)
+let key = new Date().toLocaleString().slice(0, 10)
 
 if (localStorage.getItem(key)==null) {
     localStorage.setItem(key,0)
